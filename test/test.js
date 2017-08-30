@@ -1,10 +1,11 @@
-const assert = require('assert')
+//const assert = require('assert')
 
 describe('require', () => {
   before(() => {
     require.config({
       paths: {
-        'jquery': 'https://cdn.bootcss.com/jquery/2.2.1/jquery',
+        // 'jquery': 'https://cdn.bootcss.com/jquery/2.2.1/jquery',
+        'jquery': 'https://code.jquery.com/jquery-2.2.4.js',
       }
     })
   })

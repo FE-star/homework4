@@ -9,14 +9,14 @@ describe('require', () => {
     })
   })
 
-  it('可以异步require代码', function (done) {
-    require(['./base/mod/a'], function (mod) {
+ it('可以异步require代码', function (done) {
+    require(['./base/mod/a.js'], function (mod) {
       mod.should.equal('hello world')
       done()
     })
-  })
+ })
 
-  it('加载模块可以有依赖', function (done) {
+  /* it('加载模块可以有依赖', function (done) {
     require(['./base/mod/b'], function (mod) {
       mod.should.equal('Daniel: hello world')
       done()
@@ -28,5 +28,5 @@ describe('require', () => {
       $('body').length.should.equal(1)
       done()
     })
-  })
+  })*/
 })

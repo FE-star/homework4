@@ -1,5 +1,3 @@
-const assert = require('assert')
-
 describe('require', () => {
   before(() => {
     require.config({

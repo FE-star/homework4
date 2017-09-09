@@ -16,7 +16,7 @@ describe('require', () => {
     })
   })
 
-  it('加载模块可以有依赖', function (done) {
+  /*it('加载模块可以有依赖', function (done) {
     require(['./base/mod/b'], function (mod) {
       mod.should.equal('Daniel: hello world')
       done()
@@ -28,5 +28,5 @@ describe('require', () => {
       $('body').length.should.equal(1)
       done()
     })
-  })
+  })*/
 })

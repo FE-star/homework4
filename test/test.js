@@ -1,3 +1,4 @@
+
 describe('require', () => {
   before(() => {
     require.config({
@@ -8,10 +9,10 @@ describe('require', () => {
   })
 
   it('可以异步require代码', function (done) {
-    require(['./base/mod/a'], function (mod) {
-      mod.should.equal('hello world')
-      done()
-    })
+     require(['./base/mod/a'], function (mod) {
+        mod.should.equal('hello world')
+        done()
+     })
   })
 
   it('加载模块可以有依赖', function (done) {
@@ -20,11 +21,13 @@ describe('require', () => {
       done()
     })
   })
-
+  
+   
   it('可以设置paths', function (done) {
-    require(['jquery'], function ($) {
-      $('body').length.should.equal(1)
-      done()
-    })
+     require(['jquery'], function ($) {
+        $('body').length.should.equal(1)
+        done()
+     })
   })
+  
 })

@@ -4,7 +4,8 @@
   "description": "homework",
   "main": "index.js",
   "scripts": {
-    "test": "karma start"
+    "test": "karma start",
+    "test1": "opn http://localhost:9876/base/mod/test.html"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,10 @@
     "karma": "^1.7.0",
     "karma-chrome-launcher": "^2.2.0",
     "karma-mocha": "^1.3.0",
+    "koa": "^2.3.0",
+    "koa-static": "^4.0.1",
     "mocha": "^3.5.0",
+    "opn-cli": "^3.1.0",
     "should": "^11.2.1"
   }
 }

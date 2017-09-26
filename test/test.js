@@ -27,4 +27,11 @@ describe('require', () => {
       done()
     })
   })
+
+  it('重复依赖', function () {
+      require(['./base/mod/c'],function(mod){
+        should.throws(()=>{mod})
+        done()
+      })
+  })
 })

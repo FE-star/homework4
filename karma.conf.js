@@ -21,6 +21,14 @@ module.exports = function(config) {
       {
         pattern: 'mod/*.js',
         included: false
+      },
+      {
+        pattern: 'mod/*.html',
+        included: false
+      },
+      {
+        pattern: 'lib/*.js',
+        included: false
       }
     ],
 
